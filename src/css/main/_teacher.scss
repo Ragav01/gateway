@@ -1,0 +1,112 @@
+.ins-info{
+  ul{
+    margin: 30px 10px;
+    @include mobile{
+      margin: 30px 10px 0 0;
+    }
+    li{
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.ins-cont{
+  margin-bottom: 30px;
+  div{
+    background: $white;
+    padding: 20px;
+    height: 260px;
+    border-left: 3px solid $primary_color;
+    @include mobile{
+      height: 100%;
+    }
+    h5{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.card_teach {
+  transition: 0.2s;
+  
+  &:hover {
+    transform: scale(1.05, 1.05);
+    -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  }
+  
+}
+.profile {
+  -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  .name {
+    position: absolute;
+    background: #0078e9d8;
+    width: 95%;
+    padding:10px 20px;
+    bottom: 20px;
+    
+    h5, p{
+      color: $white;
+    }
+    h5{
+      margin-bottom: 0;
+    }   
+    p{
+      font-size: 14px;
+    }
+  }
+  
+}
+// Teacher_details
+.bg-prime{
+  background: $tag;
+  border-radius: 20px;
+  -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.14);
+  -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.4);
+  box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.24);
+}
+.teacher_details_cover{
+  
+  ul{
+    display: flex;
+
+    li{
+      margin: 20px 15px 0 0;
+      a i{
+        font-size: 25px;
+      }
+      
+    }
+    .fa-facebook-square{
+      color: #3b5998;
+    }
+    .fa-twitter-square{
+      color: #00acee;
+    }
+    .fa-google-plus-square{
+      color: #db4a39;
+    }
+    .fa-linkedin{
+      color: #0e76ab;
+    }
+  }
+}
+
+.student_review{
+  margin-right: 40%;
+  @include mobile{
+    margin-right: 0;
+  }
+  h5{
+    span{
+      font-size: 15px;
+      color: #727272;
+    }
+  }
+}
+

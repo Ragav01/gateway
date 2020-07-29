@@ -1,0 +1,88 @@
+.webinar {
+  .row {
+    border-radius: 15px;
+    box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+    background: $white;
+  }
+  .img {
+    height: 300px;
+    width: 100%;
+    background: red;
+    border-radius: 15px;
+
+    img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+  .detail {
+    padding: 20px 40px 20px 40px;
+    @include mobile {
+      padding: 20px;
+    }
+    // .more-details{
+    //     display: none;
+    // }
+    p {
+      margin-top: 20px;
+    }
+    ul {
+      padding: 0 20px;
+    }
+    li {
+      list-style-type: disc;
+      margin-bottom: 15px;
+    }
+  }
+
+  .detail-btn {
+    margin-top: 40px;
+    border: none;
+    background: $tag;
+    color: $dark;
+    margin-right: 20px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      border: 0;
+    }
+  }
+  .register-btn {
+    margin-top: 40px;
+    border: none;
+    background: $primary-color;
+    color: $white;
+    padding: 10px 12px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border: 0;
+    }
+  }
+}
+form {
+  #send-btn {
+    width: 200px;
+    margin: 20px;
+    border: none;
+    background: $primary-color;
+    color: $white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      border: 0;
+    }
+  }
+  .error_form{
+    color: red;
+    margin-left: 20px;
+    @include mobile(){
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,309 @@
+.thumbnail {
+  margin-top: 40px;
+}
+.img-thumbnail {
+  padding: 0;
+}
+
+.course-tittle {
+  width: 100%;
+  padding-right: 20px;
+}
+.live {
+  font-size: 18px;
+  margin-right: 10px;
+  color: $dark;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: red;
+    border-radius: 10px;
+    margin: 10px 5px;
+    @include mobile {
+      height: 8px;
+      width: 8px;
+    }
+  }
+  @include mobile {
+    font-size: 16px;
+  }
+}
+.nav-pills {
+  border-bottom: 2px solid #e7e7e7;
+}
+.nav_tab {
+  .nav-link {
+    font-size: 17px;
+    font-weight: 400;
+    color: $dark;
+    margin: 15px 15px 0 0;
+
+    @include mobile {
+      font-size: 14px;
+      padding: 10px;
+      // margin: 0 0 15px;
+    }
+  }
+  .nav-item {
+    .active {
+      font-size: 17px;
+      font-weight: 400;
+      background: none;
+      color: $white;
+      border-radius: 0;
+      background: $primary_color;
+      border-radius: 5px 5px 0 0;
+      -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+      -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+      box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+      @include mobile {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  }
+  .tab-content {
+    background: $white;
+    padding: 20px;
+    margin: 0 !important;
+
+    h6 {
+      color: $dark;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 20px 0;
+    }
+    p {
+      margin: 15px 0;
+      font-size: 15px;
+    }
+    ul li {
+      padding: 5px 0;
+      font-size: 15px;
+      color: #727272;
+    }
+  }
+}
+
+.cariculum {
+ 
+  p{
+    background-color: $tag;
+    color:$dark;
+    cursor: pointer;
+    padding:10px 18px;
+    max-width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    margin-bottom: 0 !important;
+    position: relative;
+    padding-right:20px ;
+  }
+
+  p::after {
+    content: "\002B";
+    position: absolute;
+    color: #00113d;
+    opacity: 0.7;
+    font-weight: bold;
+    right: 15px;
+    top: 10px;
+    margin-left: 5px;
+  }
+
+  .active::after {
+    content: "\2212";
+  }
+
+  ul {
+    padding: 0 18px;
+    background-color: $white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 5px 20px;
+ 
+    li{
+      list-style: disc;
+
+    }
+  }
+}
+
+.start-time {
+  background: $white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  h4 {
+    font-size: 22px;
+  }
+  @include mobile {
+    padding: 30px 0;
+    margin-top: 40px;
+  }
+}
+.wrapper {
+  text-align: center;
+}
+.time {
+  color: $dark;
+  font-size: 22px;
+  font-weight: 500;
+}
+.label {
+  font-size: 13px;
+  display: block;
+  color: #aaa;
+}
+
+.price_list {
+  background: $white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  height: 530px;
+  width: 100%;
+  @include mobile {
+    margin-top: 40px;
+  }
+  h3,
+  small {
+    color: $primary_color;
+    &::before {
+      content: "₹";
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+  small {
+    font-size: 20px;
+    margin-left: 15px;
+    color: #727272;
+  }
+
+  ul li {
+    padding: 13px 0;
+    font-size: 16px;
+  }
+  i {
+    text-align: center;
+    width: 20px;
+    margin-right: 10px;
+    color: $primary_color;
+  }
+  -webkit-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  -moz-box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+  box-shadow: -5px 60px 43px -14px rgba(168, 185, 255, 0.34);
+
+  .price_btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    border: none;
+    background: $primary_color;
+    border-radius: 5px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.2s;
+    margin-top: 20px;
+    @include mobile {
+      margin: 20px auto;
+      height: 55px;
+      width: 100%;
+      font-size: 15px;
+    }
+    &:hover {
+      -webkit-box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+      -moz-box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+      box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.available-time {
+  background: $white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 40px;
+  h5 {
+    text-align: center;
+  }
+  ul {
+    margin-top: 20px;
+    li {
+      padding: 13px 0;
+      font-size: 16px;
+      display: block;
+      position: relative;
+      &::after{
+        content: 'Available';
+        position: absolute;
+        right: 0;
+        color: #048500;
+      }
+    }
+  }
+}
+.ins-name {
+  position: absolute;
+  bottom: 20px;
+  width: 80%;
+
+  @include mobile {
+    width: 100%;
+  }
+  div {
+    padding: 15px;
+    background: #0078e9d8;
+    color: $white;
+  }
+  h5 {
+    color: $white;
+  }
+  small {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.tag {
+  @include mobile {
+    display: inline;
+  }
+  li {
+    margin-right: 25px;
+    a i {
+      margin-top: 10px;
+      color: #656565;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
+.rating-star {
+  background: $tag;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  i {
+    margin-right: 5px;
+    color: #ffa807;
+  }
+}

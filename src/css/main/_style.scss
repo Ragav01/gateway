@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+$primary_color: #0078e9;
+$hero: #7001b4;
+$header_text: #07fbdb;
+$dark: #00113d;
+$body: #fbfbfb;
+$con: #f7f5ff;
+$white: #ffffff;
+$gray: #777777;
+$tag: #edf2ff;
+$yellow: #ffe600;
+
+$mobile: 992px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: $body;
+}
+h1,
+h2,
+h5,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  @include mobile() {
+    font-size: 48px;
+  }
+}
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  @include mobile() {
+    font-size: 35px;
+  }
+}
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+  @include mobile() {
+    font-size: 30px;
+  }
+}
+h4 {
+  font-size: 28px;
+  font-weight: 600;
+  @include mobile() {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+h5 {
+  font-size: 19px;
+  font-weight: 500;
+}
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+p {
+  font-size: 16px;
+  color: #727272;
+  font-weight: 400;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #727272;
+  &:hover {
+    text-decoration: none;
+    color: #727272;
+  }
+}
+.fa-star,.fa-star-half-alt{
+  color: #ffa807;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  border:1.5px solid black !important;
+  background: none;
+  box-shadow: none;
+}
+.form{
+  background: $white;
+ input, textarea{
+   border:1px solid #727272;
+   border-radius: 5px;
+   background: none;
+   padding: 25px 20px;
+   margin-bottom: 35px;
+ }
+ button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border: none;
+  background: $primary_color;
+  border-radius: 5px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.2s;
+  margin-top: 20px;
+  @include mobile{
+    margin:20px auto;
+    height: 55px;
+    width: 100%;
+    font-size: 15px;
+  }
+  &:hover {
+    -webkit-box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+    -moz-box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+    box-shadow: 0px 27px 46px -20px rgba(127, 138, 255, 1);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.error_form{
+  color: red;
+  margin-left: 20px;
+
+  @include mobile(){
+    font-size: 10px;
+  }
+}
+}
+select{
+  padding: 13px 15px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  &:focus{
+    background: none;
+    box-shadow: none;
+  }
+  
+}
+.file{
+  position: relative;
+  background:$primary_color;
+  color: $white;
+  overflow: hidden;
+  padding: 12px 20px;
+  &:hover{
+    color: $white;
+  }
+  input[type=file]{
+    position: absolute;
+    border: 0;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+}
